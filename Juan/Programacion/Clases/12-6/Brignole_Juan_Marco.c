@@ -15,7 +15,7 @@ int main(void)
             p("\nLos 3 interruptores se encuentran apagados");
             flag = 1;
         }
-        p("\n\n-->Menu de lamparas<--");
+        p("\n\n-->Menú de lamparas<--");
         p("\nIngrese 1 para modificar el estado del primer interruptor");
         p("\nIngrese 2 para modificar el estado del segundo interruptor");
         p("\nIngrese 3 para modificar el estado del tercer interruptor");
