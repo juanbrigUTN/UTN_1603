@@ -1,4 +1,5 @@
 Algoritmo gestionCalificaciones
+<<<<<<< HEAD
 	Definir j, i, notaEstudiantes, cantidadEstudiantes, flag, flagNota, sumaNotas, aprobados, desaprobados, max1, max2, max3, pos1, pos2, pos3 Como Entero
 	Definir promedio Como Real
 	Definir nombreEstudiantes, auxNombres, temp Como Caracter
@@ -13,6 +14,16 @@ Algoritmo gestionCalificaciones
 	
 	Repetir
 		//Validación de cantidad de estudiantes
+=======
+	Definir j, i, notaEstudiantes, cantidadEstudiantes, flag, flagNota, long, valorNotas, auxNotas Como Entero
+	Definir nombreEstudiantes, auxNombres, temp Como Caracter
+	
+	valorNotas <- 2
+	long <- 40
+	flag <- 0
+	flagNota <- 0
+	Repetir
+>>>>>>> 29405dd9320721546041a64e9094d48d0efaf0d1
 		Si flag = 1 Entonces
 			Escribir "Ingrese un número de estudiantes válido"
 		FinSi
@@ -22,23 +33,39 @@ Algoritmo gestionCalificaciones
 	Hasta Que cantidadEstudiantes > 0
 	Escribir ""
 	
+<<<<<<< HEAD
 	Dimension notaEstudiantes[cantidadEstudiantes]
 	Dimension notasOrdenadas[cantidadEstudiantes]
 	Dimension nombreEstudiantes[cantidadEstudiantes]
 	Dimension auxNombres[cantidadEstudiantes]
 	
 	//Ingresar nombre de estudiantes (sin orden alfabetico)
+=======
+	Dimension notaEstudiantes[cantidadEstudiantes, 2]
+	Dimension auxNotas[cantidadEstudiantes, valorNotas]
+	Dimension nombreEstudiantes[cantidadEstudiantes]
+	Dimension auxNombres[cantidadEstudiantes]
+	
+	
+	
+>>>>>>> 29405dd9320721546041a64e9094d48d0efaf0d1
 	Para i <- 0 Hasta cantidadEstudiantes - 1 Con Paso 1 Hacer
 		Escribir "Ingrese el nombre del ", i+1, " estudiante"
 		Leer nombreEstudiantes[i]
 	FinPara
 	
+<<<<<<< HEAD
 	//Creación array auxiliar para nombres de estudiantes
+=======
+>>>>>>> 29405dd9320721546041a64e9094d48d0efaf0d1
 	Para i <- 0 Hasta cantidadEstudiantes-1 Con Paso 1 Hacer
 		auxNombres[i] <- nombreEstudiantes[i]
 	Fin Para
 	
+<<<<<<< HEAD
 	//Proceso para ordenar alfabeticamente el array de nombres auxiliar
+=======
+>>>>>>> 29405dd9320721546041a64e9094d48d0efaf0d1
 	Para i <- 0 Hasta cantidadEstudiantes - 1 Con Paso 1 Hacer
         Para j <- 0 Hasta cantidadEstudiantes - 2 Con Paso 1 Hacer
             Si auxNombres[j] > auxNombres[j+1] Entonces
@@ -49,6 +76,7 @@ Algoritmo gestionCalificaciones
         FinPara
     FinPara
 	
+<<<<<<< HEAD
 	Escribir ""
 	
 	//Asignación de notas a estudiantes
@@ -141,5 +169,29 @@ Algoritmo gestionCalificaciones
 		Escribir "- ", auxNombres[pos2], " con nota ", notasOrdenadas[pos2]
 		Escribir "- ", auxNombres[pos3], " con nota ", notasOrdenadas[pos3]
 	FinSi
+=======
+	Para i <- 0 Hasta cantidadEstudiantes - 1 Con Paso 1 Hacer
+		Escribir auxNombres[i]
+	FinPara
+	
+	Para i <- 0 Hasta cantidadEstudiantes - 1 Con Paso 1 Hacer
+		Repetir
+			Escribir ""
+			Escribir "Por favor, ingrese una nota entre 1 y 10"
+			Escribir ""
+			
+			Escribir "Ingresar la nota final de ", nombreEstudiantes[i]
+			Leer notaEstudiantes[i, 0]
+		Hasta Que notaEstudiantes[i, 0] >= 1 y notaEstudiantes[i, 0] <= 10
+	FinPara
+	Escribir ""
+	Para i <- 0 Hasta cantidadEstudiantes -1 Con Paso 1 Hacer
+		Escribir ""
+		Escribir "La nota de: ", nombreEstudiantes[i]
+		Escribir "Fue: ", notaEstudiantes[i, 0]
+		Escribir ""
+	FinPara
+	
+>>>>>>> 29405dd9320721546041a64e9094d48d0efaf0d1
 	
 FinAlgoritmo

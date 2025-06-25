@@ -26,11 +26,19 @@ Algoritmo ordenamientoVectoresSinRepetidos
 	
 	// Mostramos vectores:
 	Para i<-0 Hasta long-1 Con Paso 1 Hacer
+<<<<<<< HEAD
 		Escribir Sin Saltar vector[i], " "
 	Fin Para
 	Escribir ""
 	Para i<-0 Hasta long-1 Con Paso 1 Hacer
 		Escribir Sin Saltar aux[i], " "
+=======
+		Escribir Sin Saltar vector[i] " "
+	Fin Para
+	Escribir ""
+	Para i<-0 Hasta long-1 Con Paso 1 Hacer
+		Escribir Sin Saltar aux[i] " "
+>>>>>>> 29405dd9320721546041a64e9094d48d0efaf0d1
 	Fin Para
 	
 	// Ordenamos el vector auxiliar:
@@ -47,7 +55,11 @@ Algoritmo ordenamientoVectoresSinRepetidos
 	// Mostramos vector aux ordenado:
 	Escribir ""
 	Para i<-0 Hasta long-1 Con Paso 1 Hacer
+<<<<<<< HEAD
 		Escribir Sin Saltar aux[i], " "
+=======
+		Escribir Sin Saltar aux[i] " "
+>>>>>>> 29405dd9320721546041a64e9094d48d0efaf0d1
 	Fin Para
 	
 	// Mostramos posición(es) del mayor:
